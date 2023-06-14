@@ -1,10 +1,19 @@
 project:
   type: website
+  resources:
+    - "images/twitter-card.png"
+
+execute:
+  freeze: true
 
 website:
   title: "Bioconductor community blog"
   site-url: https://bioconductor.github.io/biocblog/
   description: "A blog for the Bioconductor community!"
+  twitter-card:
+    creator: "@Bioconductor"
+    image: "/images/twitter-card.png"
+  open-graph: true
   navbar:
     right:
       - about.qmd
@@ -19,7 +28,11 @@ website:
         href: https://bioc-community.herokuapp.com/
       - icon: rss
         href: index.xml
+  
 format:
   html:
     theme: yeti
     css: styles.css
+    include-in-header:
+      text: |
+        <script defer data-domain="bioconductor.github.io/biocblog" src="https://plausible.io/js/script.js"></script>

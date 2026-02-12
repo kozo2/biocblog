@@ -95,7 +95,7 @@ The following diagram illustrates the new, automated workflow, showing how submi
 
 If you're interested in organizing a Bioconductor-related event, here's how to apply through the new system:
 
-1. **Access the Application Form**: Visit the new Bioconductor event application form (link will be provided on the official Bioconductor website and community channels).
+1. **Access the Application Form**: Visit the new Bioconductor event application form ([https://forms.gle/2SRaGTpv3EtQ9F8SA](https://forms.gle/2SRaGTpv3EtQ9F8SA)).
 
 2. **Complete the Application**: Provide details about your proposed event, including:
    - Explanation of relevance to the Bioconductor community

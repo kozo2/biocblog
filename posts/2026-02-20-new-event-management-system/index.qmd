@@ -1,5 +1,5 @@
 ---
-title: "Introducing Bioconductor's New Event Management System"
+title: "Introducing Bioconductor's New Event Management System and Champion Program"
 description: |
   Learn about the transition from GitHub Issue Forms to an automated event management system using Google Forms and Google Apps Script, and how the Bioconductor Champion Program supports event organizers.
 author:
@@ -54,6 +54,10 @@ There was a significant risk of missing new event applications if GitHub notific
 
 These challenges highlighted the need for a more streamlined, accessible, and privacy-conscious solution.
 
+To visualize the manual steps and potential bottlenecks, the diagram below summarizes the current workflow we are replacing.
+
+![Current event management workflow: GitHub issue forms, manual review, manual replies, manual PRs, calendar updates, and closing issues.](old_eventworkflow.png)
+
 ## Transition to an Automated System
 
 To address these limitations, we have developed a new automated event management system using Google Forms and Google Apps Script. This solution is available in the [@kozo2/bioc-event-workflow](https://github.com/kozo2/bioc-event-workflow) repository.
@@ -68,7 +72,6 @@ The new system offers several important improvements:
 
 **Automated Workflow**: The Google Apps Script automation handles:
 
-- Automatic acknowledgment emails to applicants
 - Notification to reviewers when new applications are received
 - Status tracking throughout the review process
 - Systematic follow-up mechanisms
@@ -82,26 +85,28 @@ The new system offers several important improvements:
 
 This transition represents a significant step forward in making Bioconductor event management more inclusive, efficient, and professional.
 
+The following diagram illustrates the new, automated workflow, showing how submissions move from Google Forms to review, scheduling, and automated updates.
+
+![New event management workflow: Google Forms submission, review in Google Sheets, automated calendar updates and PR creation via Apps Script, and thank-you replies.](new_eventworkflow.png)
+
 ## Application Procedures
 
 ### For Event Organizers
 
 If you're interested in organizing a Bioconductor-related event, here's how to apply through the new system:
 
-1. **Access the Application Form**: Visit the Bioconductor event application form (link will be provided on the official Bioconductor website and community channels).
+1. **Access the Application Form**: Visit the new Bioconductor event application form (link will be provided on the official Bioconductor website and community channels).
 
 2. **Complete the Application**: Provide details about your proposed event, including:
-   - Event type (workshop, training, conference, meetup, etc.)
+   - Explanation of relevance to the Bioconductor community
+   - Description of the event content
+   - Submitter email address
    - Proposed date and location
-   - Expected number of participants
-   - Description of the event content and learning objectives
-   - Information about organizers and instructors
-   - Budget requirements (if requesting financial support)
 
 3. **Submit and Confirm**: After submission, you'll receive an automated acknowledgment email confirming that your application has been received.
 
 4. **Review Process**: The Bioconductor community team will review your application and typically respond within two weeks with:
-   - Approval and next steps for event planning
+   - Approval and posting of the event information at https://www.bioconductor.org/help/events/
    - Requests for additional information
    - Suggestions for event improvement
    - Information about available support resources
